@@ -69,7 +69,7 @@ function render(){
  back.hidden=(step===0||step===5);fill.style.width=(step===0?0:Math.min(step,TOTAL)/TOTAL*100)+"%";
  var h="";
  if(step===0){
-  h='<div class="screen"><div class="hero">💌</div><h1 style="text-align:center">Hola, Gordi</h1><p class="sub" style="text-align:center">David quiere invitarte a una cita. Solo tienes que contestar cuatro cosas y el plan se arma solo.</p><div class="spacer"></div><button class="btn" id="go">Empezar</button></div>';
+  h='<div class="screen"><div class="hero">🎁</div><h1 style="text-align:center">Hola, Gordi</h1><p class="sub" style="text-align:center">Como pequeño regalo de cumple quiero invitarte a una cita. Como a veces se nos complica elegir sitio, tienes que hacer este pequeño cuestionario.</p><p class="sub" style="text-align:center">Puedes volver atrás cuando quieras, así que elige bien el sitio 💗</p><div class="spacer"></div><button class="btn" id="go">Empezar</button></div>';
  }else if(step===1){
   h='<div class="screen"><h2>¿Qué te apetece comer?</h2><p class="sub">Elige el tipo de comida.</p><div class="grid">'+TYPES.map(function(t,i){return '<button class="card" data-i="'+i+'"><b>'+t.e+'</b>'+t.id+'</button>'}).join("")+'</div></div>';
  }else if(step===2){
